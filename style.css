@@ -1,0 +1,208 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(1, 1, 32);
+}
+
+#cover {
+    width: 100%;
+    height: 33%;
+    background-color: black;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    border: 5px redgreen solid;
+    box-shadow:
+        0 0 10px lime,
+        0 0 20px lime,
+        0 0 30px lime;
+    transition: box-shadow 1s ease-out;
+}
+
+#personal {
+    height: 100%;
+    padding: 5px;
+    position: absolute;
+    left: 0;
+    color: aliceblue;
+    font-size: xx-large;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#personal h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-shadow:
+        0 0 5px purple,
+        /* Glow color */
+        0 0 10px purple,
+        0 0 20px purple,
+        0 0 40px purple;
+    animation: flicker 1.5s infinite alternate;
+}
+
+#personal h2,
+#personal h3 {
+    font-family: 'Roboto', sans-serif;
+    text-shadow:
+        0 0 5px purple,
+        /* Glow color */
+        0 0 10px purple,
+        0 0 20px purple,
+        0 0 40px purple;
+    animation: flicker 1.5s infinite alternate;
+}
+
+#profilepic {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: -150px;
+    transition: all o.3s ease;
+    z-index: 2;
+    background-color: black;
+    position: absolute;
+    border: 2px solid black;
+    box-shadow:
+        0 0 10px lightblue,
+        0 0 20px lightblue,
+        0 0 30px lightblue;
+    transition: box-shadow 0.5s ease-out;
+
+}
+
+#profilepic.enlarged {
+    height: 600px;
+    width: 600px;
+    bottom: -300px;
+    border: purple 2px solid;
+    box-shadow:
+        0 0 10px purple,
+        0 0 20px purple,
+        0 0 30px purple;
+    transition: box-shadow 0.5s ease-out;
+}
+
+
+#profilepic img {
+    padding: 2px;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+
+#personal {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#right {
+    border: 3px lavender solid;
+    display: flex;
+    position: absolute;
+    right: 0;
+}
+
+
+#element h1 {
+    color: rgb(242, 235, 36);
+    text-shadow:
+        0 0 5px red,
+        0 0 10px red,
+        0 0 15px red,
+        0 0 20px red;
+    animation: flicker 1.5s infinite alternate;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+#mid {
+    height: 59%;
+    padding: 10px;
+    /* border: solid springgreen 10px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#cirTi {
+    height: 75%;
+    width: 70%;
+    border: solid 3px black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.certificates img{
+    height: 150px;
+    width: 200px;
+    border: 4px solid darkgoldenrod;
+    box-shadow:
+        0 0 5px darkgoldenrod,
+        0 0 10px darkgoldenrod,
+        0 0 15px darkgoldenrod;
+    transition: box-shadow 0.5s ease-out;
+    /* cursor: pointer; */
+}
+
+#endnav {
+    height: 74px;
+    width: 100%;
+    background-color: aqua;
+    border: solid 5px lightseagreen;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5px;
+    box-shadow:
+        0 0 10px lightseagreen,
+        0 0 20px lightseagreen,
+        0 0 30px lightseagreen;
+    transition: box-shadow 0.5s ease-out;
+
+}
+
+#links img {
+    height: 50px;
+    width: 50px;
+    margin-right: 50px;
+
+}
+
+#mail {
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    border: solid 1px black;
+    border-radius: 4px;
+    background-color: aquamarine;
+}
